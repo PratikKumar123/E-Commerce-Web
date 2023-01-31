@@ -1,29 +1,21 @@
 package com.dao;
 
-import java.util.List;
-
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.Models.Register;
+import com.Models.AddProduct;
 
 @Repository
-public class RegisterDao {
+public class ProductAddDao {
 	@Autowired
 	private HibernateTemplate hibernateTempate;
-
 	@Transactional
-	public int saveUser(Register reg) {
-
-		int i = (Integer) this.hibernateTempate.save(reg);
+	public int saveProduct(AddProduct pro) {
+		
+		int i =(Integer)this.hibernateTempate.save(pro);
 		return i;
 	}
-
-	public List<Register> getAllUserData() {
-		return this.hibernateTempate.loadAll(Register.class);
-	}
-
 }

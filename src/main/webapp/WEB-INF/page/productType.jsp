@@ -25,7 +25,7 @@
 					<div class="card-body">
 						<h4 class="card-title">Mens Clothes</h4>
 						<p class="card-text">Quality Branded clothes for MEN, can make you feel great. ...</p>
-						<a href="productList" class="btn btn-primary">Go & Shop</a>
+						<a href="productList1" class="btn btn-primary">Go & Shop</a>
 					</div>
 				</div>
 			</div>
@@ -36,7 +36,7 @@
 					<div class="card-body">
 						<h4 class="card-title">Womens Clothes</h4>
 						<p class="card-text">Quality Branded clothes for WOMEN, can make you feel great. ...</p>
-						<a href="#" class="btn btn-primary">Go & Shop</a>
+						<a href="womens" class="btn btn-primary">Go & Shop</a>
 					</div>
 				</div>
 			</div>

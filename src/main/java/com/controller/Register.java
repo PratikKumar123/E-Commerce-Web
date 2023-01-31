@@ -23,10 +23,9 @@ public class Register {
 
 	@RequestMapping(path = "/doregister", method = RequestMethod.POST)
 	public String handlereg(@ModelAttribute com.Models.Register reg, Model m) {
-		m.addAttribute("register", reg);
 		int id = this.rs.createUser(reg);
-		m.addAttribute("msg","User created with "+id);
-		return "registersuccess";
+		m.addAttribute("msg","Successfully registerd login please");
+		return "login";
 	}
 
 }

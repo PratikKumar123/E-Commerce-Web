@@ -11,47 +11,39 @@
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
 
-
-<link rel="stylesheet" href="<c:url value="/resource/css/login.css"/>">
+<title>ADMIN</title>
+<link rel="stylesheet" href="<c:url value="/resource/css/admin.css"/>">
+</head>
 <script type="text/javascript">
 	setTimeout(function() {
 		$('#hide').fadeOut('fast');
 	}, 5000);
-	
-	setTimeout(function() {
-		$('#hide1').fadeOut('fast');
-	}, 5000);
 </script>
-</head>
 <body>
 	<%@ include file="navbar.jsp"%>
 
-	<div class=" container pt-5 mt-2 "style="padding: 130px">
+	<div class=" container pt-5 mt-5"style="padding: 150px">
 		<div class="global-container">
 			<div class="card login-form">
 				<div class="card-body">
-				<h4 style="color: red;" id="hide" class="text-center">${msg}</h4>
-				<h4 style="color: red;" id="hide1" class="text-center">${loginfail}</h4>
-					<h1 class="card-title text-center">Login Here</h1>
+				<h4 style="color: red;" id="hide" class="text-center">${failedAdmin}</h4>
+					<h1 class="card-title text-center">Admin  login here</h1>
 					<div class="card-text">
-						<form action="dologin" method="post">
+						<form action="doadminregister" method="post">
 							<div class="form-group">
-								<label for="exampleInputEmail1"> Enter Email address </label> <input
-									type="email" name="lemail" class="form-control form-control-sm"
+								<label for="exampleInputEmail1"> Enter Admin email </label> <input
+									type="email" name="aemail" class="form-control form-control-sm"
 									id="exampleInputEmail1" aria-describedby="emailHelp">
 							</div>
 							<div class="form-group">
-								<label for="exampleInputPassword1">Enter Password </label> <a
+								<label for="exampleInputPassword1">Enter Admin Password </label> <a
 									href="#" style="float: right; font-size: 12px;"> Forgot
-									password? </a> <input type="password" name="lpassword"
+									password? </a> <input type="apassword" name="apassword"
 									class="form-control form-control-sm" id="exampleInputPassword1">
 							</div>
 							<button type="submit" class="btn btn-primary btn-block">
-								Sign in</button>
+								lOG iN</button>
 
-							<div class="sign-up">
-								Don't have an account? <a href="register"> Create One </a>
-							</div>
 						</form>
 					</div>
 				</div>
@@ -59,8 +51,8 @@
 		</div>
 		<%@ include file="footer.jsp"%>
 		
+		
 			<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		
 </body>
 </html>

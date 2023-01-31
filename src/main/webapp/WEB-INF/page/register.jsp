@@ -15,14 +15,16 @@
 <link rel="stylesheet"
 	href="<c:url value="/resource/css/register.css"/>">
 </head>
+
 <body>
 	<%@ include file="navbar.jsp"%>
-	<div class="container mt-5">
-		<div class="pt-5">
+	<div class="container " style="padding: 130px">
+		<div>
 			<div class="global-container">
 				<div class="card login-form">
 					<div class="card-body">
 						<h1 class="card-title text-center">Register Here</h1>
+						<%-- <h4 style="color: red;" id="hide" class="text-center">${msg}</h4> --%>
 						<div class="card-text">
 							<form action="doregister" method="post">
 								<div class="form-group">
@@ -68,6 +70,7 @@
 				</div>
 			</div>
 		</div>
-<%@ include file="footer.jsp"%>
+		<%@ include file="footer.jsp"%>
+		
 </body>
 </html>
