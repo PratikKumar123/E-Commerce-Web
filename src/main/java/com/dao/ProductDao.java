@@ -13,7 +13,6 @@ public class ProductDao {
 	public List<AddProduct> getProduct(){
 		
 		AddProduct p1 = new AddProduct();
-		p1.setId(101);
 		p1.setProductId("101");
 		p1.setPname("Kurta");
 		p1.setPdec("Custom Mirror Embroidered Kurta For Men Indian Kurta wedding Sherwani groom Sherwani Indian wedding Suit kurta for boys ");
@@ -24,7 +23,6 @@ public class ProductDao {
 		
 		
 		AddProduct p2 = new AddProduct();
-		p2.setId(101);
 		p2.setProductId("102");
 		p2.setPname("wedding kurta");
 		p2.setPdec("Handmade chicken carry kurta, wedding kurta,mens kurta,ethnic kurta,men kurta for men,");
@@ -33,7 +31,6 @@ public class ProductDao {
 		p2.setPurl("https://i.etsystatic.com/35870620/r/il/af40a9/3953200872/il_794xN.3953200872_4lpu.jpg");
 		
 		AddProduct p3 = new AddProduct();
-		p3.setId(101);
 		p3.setProductId("103");
 		p3.setPname("Iron Man T shirt");
 		p3.setPdec("Marvel Iron Man Classic Retro Comic Vintage Cover Graphic T-Shirt Unisex Tee Adult T-shirt Kid Shirt Long Sleeve Sweatshirt Women's Tank");
@@ -42,7 +39,6 @@ public class ProductDao {
 		p3.setPurl("https://i.etsystatic.com/31602485/r/il/16ade1/4068254751/il_794xN.4068254751_n089.jpg");
 		
 		AddProduct p4 = new AddProduct();
-		p4.setId(101);
 		p4.setProductId("104");
 		p4.setPname(" HANSMAYA shirts");
 		p4.setPdec("HANDCRAFTED & HAND PRINTED Unisex 100% Organic Cotton Short Sleeve Regular Fit,Summer Clothing, Stylish Shirt, , Elegant Short Sleeve Shirt");
@@ -52,7 +48,6 @@ public class ProductDao {
 		
 		
 		AddProduct p5 = new AddProduct();
-		p5.setId(101);
 		p5.setProductId("105");
 		p5.setPname("Cotton Shrit");
 		p5.setPdec("Mens 100% Cotton Short Sleeve regular fit shirt , Indian print , Hand printed .");
@@ -62,7 +57,6 @@ public class ProductDao {
 		
 		
 		AddProduct p6 = new AddProduct();
-		p6.setId(101);
 		p6.setProductId("106");
 		p6.setPname("Elegant Short Sleeve Shirt");
 		p6.setPdec("HANDCRAFTED & HAND PRINTED Unisex 100% Organic Cotton Short Sleeve Regular Fit,Summer Clothing, Stylish Shirt, , Elegant Short Sleeve Shirt,");
@@ -72,7 +66,6 @@ public class ProductDao {
 		
 		
 		AddProduct p7 = new AddProduct();
-		p7.setId(101);
 		p7.setProductId("107");
 		p7.setPname("Casual Beach Shirt");
 		p7.setPdec("HANDCRAFTED HAND PRINTED Unisex Shirts Hawaiian Shirt Button Down Shirts Cotton Casual Beach Summer Outfits Cool & Stylish Tropical Wear");

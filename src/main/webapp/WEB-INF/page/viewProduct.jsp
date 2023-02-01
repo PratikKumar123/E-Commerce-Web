@@ -40,7 +40,7 @@
 					<div class="card-body">
 						<h3 class="card-title">
 							<strong>Product Name :-</strong>${getproduct.pname }</h3>
-						<p class="card-text">Product Description :-${getproduct.pdec }</p>
+						<p class="card-text text-primary">Product Description :-${getproduct.pdec }</p>
 						<h4>Product Price :- &#8377; ${getproduct.pprice }</h4>
 						<a href="#" class="btn btn-primary">Go to know more</a>
 					</div>

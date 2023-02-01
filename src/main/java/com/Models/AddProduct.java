@@ -9,7 +9,6 @@ import javax.persistence.Id;
 public class AddProduct {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
 	private String productId;
 	private String pname;
 	private String pdec;
@@ -24,12 +23,6 @@ public class AddProduct {
 	}
 	public void setProductId(String productId) {
 		this.productId = productId;
-	}
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
 	}
 	public String getPname() {
 		return pname;
@@ -63,9 +56,10 @@ public class AddProduct {
 	}
 	@Override
 	public String toString() {
-		return "AddProduct [id=" + id + ", pname=" + pname + ", pdec=" + pdec + ", pprice=" + pprice + ", purl=" + purl
-				+ ", pgender=" + pgender + "]";
+		return "AddProduct [productId=" + productId + ", pname=" + pname + ", pdec=" + pdec + ", pprice=" + pprice
+				+ ", purl=" + purl + ", pgender=" + pgender + "]";
 	}
+
 	
 	
 	
