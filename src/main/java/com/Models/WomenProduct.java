@@ -1,7 +1,24 @@
 package com.Models;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class WomenProduct {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int womenid;
+	
+
+	public int getWomenid() {
+		return womenid;
+	}
+	public void setWomenid(int womenid) {
+		this.womenid = womenid;
+	}
 	private String wname;
 	private String wdec;
 	private int wprice;

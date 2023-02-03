@@ -34,24 +34,15 @@
 			<div class="col-sm-6 col-md-4">
 				<div class="card" style="width: 300px">
 					<img class="card-img-top"
-						src="<c:url value="${getproduct.purl }"/>" alt="Card image"
+						src="<c:url value="${getwomen.wurl }"/>" alt="Card image"
 						style="width: 100%; height: 280px">
 
 					<div class="card-body">
 						<h3 class="card-title">
-							<strong>Product Name :-</strong>${getproduct.pname }</h3>
-						<p class="card-text text-primary">Product Description :-${getproduct.pdec }</p>
-						<h4>Product Price :- &#8377; ${getproduct.pprice }</h4>
-						<% String pname = (String)session.getAttribute("username"); 
-						if(pname != null){
-						%>
-						<a href="<c:url value="/buy/${getproduct.productId }"/>"
-								class="btn btn-primary">Add To Cart</a>
-								
-						<%}else{ %>
-							<a href="<c:url value="/login"/>"
-								class="btn btn-primary">Add To Cart</a>
-						<%} %>
+							<strong>Product Name :-</strong>${getwomen.wname }</h3>
+						<p class="card-text text-primary">Product Description :-${getwomen.wdec }</p>
+						<h4>Product Price :- &#8377; ${getwomen.wprice }</h4>
+						<a href="#" class="btn btn-primary">Go to know more</a>
 					</div>
 				</div>
 			</div>

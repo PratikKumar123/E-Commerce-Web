@@ -36,7 +36,7 @@
 					<div class="card-body">
 						<h4 class="card-title">Womens Clothes</h4>
 						<p class="card-text">Quality Branded clothes for WOMEN, can make you feel great. ...</p>
-						<a href="womens" class="btn btn-primary">Go & Shop</a>
+						<a href="womenProduct" class="btn btn-primary">Go & Shop</a>
 					</div>
 				</div>
 			</div>

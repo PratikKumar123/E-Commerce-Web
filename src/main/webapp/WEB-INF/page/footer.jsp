@@ -19,22 +19,10 @@
 
 
 		<div class="footer-copyright text-center py-3">
-			© 2023 Copyright: <a href="/"> Shopping.com</a>
+			© 2023 Copyright: <a href="#"> Shopping.com</a>
 		</div>
 
 	</footer>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

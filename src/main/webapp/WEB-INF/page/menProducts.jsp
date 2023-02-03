@@ -16,100 +16,25 @@
 <body>
 	<%@ include file="navbar.jsp"%>
 
-	<div class="container " style="margin-top: 8rem;">
+	<div class="container d-flex flex-wrap  "style="margin-top: 7rem; justify-content: space-around;">
 
-		<div class="row">
-			<div class="col-sm-6 col-md-4">
-				<div class="card" style="width: 300px">
-					<img class="card-img-top" src="<c:url value="${product1.purl }"/>"
-						alt="Card image" style="width: 100%; height: 280px">
-					<div class="card-body">
-						<h3 class="card-title">${product1.pname }</h3>
-						<p class="card-text">${product1.pdec }</p>
-						<h4>Price  &#8377; ${product1.pprice }</h4>
-						<a href="<c:url value="/viewProduct/${product1.productId }"/>" class="btn btn-primary">Go to know more</a>
+		<c:forEach items="${products }" var="product1">
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<div class="card" style="width: 300px; padding: .5rem">
+						<img class="card-img-top" src="<c:url value="${product1.purl }"/>"
+							alt="Card image" style="width: 100%; height: 280px">
+						<div class="card-body">
+							<h3 class="card-title">${product1.pname }</h3>
+							<p class="card-text">${product1.pdec }</p>
+							<h4>Price &#8377; ${product1.pprice }</h4>
+							<a href="<c:url value="/viewProduct/${product1.productId }"/>"
+								class="btn btn-primary">Go to know more</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-6 col-md-4">
-				<div class="card" style="width: 300px">
-					<img class="card-img-top" src="<c:url value="${product2.purl }"/>"
-						alt="Card image" style="width: 100%; height: 280px">
-					<div class="card-body">
-						<h3 class="card-title">${product2.pname }</h3>
-						<p class="card-text">${product2.pdec }</p>
-						<h4>Price  &#8377;${product2.pprice }</h4>
-						<a href="<c:url value="/viewProduct/${product2.productId }"/>" class="btn btn-primary">Go to know more</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm-6 mt-4 col-md-4">
-				<div class="card" style="width: 300px">
-					<img class="card-img-top" src="<c:url value="${product3.purl }"/>"
-						alt="Card image" style="width: 100%; height: 280px">
-					<div class="card-body">
-						<h3 class="card-title">${product3.pname }</h3>
-						<p class="card-text">${product3.pdec }</p>
-						<h4>Price  &#8377;${product3.pprice }</h4>
-						<a href="<c:url value="/viewProduct/${product3.productId }"/>" class="btn btn-primary">Go to know more</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6  mt-4 col-md-4">
-				<div class="card" style="width: 300px">
-					<img class="card-img-top" src="<c:url value="${product4.purl }"/>"
-						alt="Card image" style="width: 100%; height: 280px">
-					<div class="card-body">
-						<h3 class="card-title">${product4.pname }</h3>
-						<p class="card-text">${product4.pdec }</p>
-						<h4>Price  &#8377;${product4.pprice }</h4>
-						<a href="<c:url value="/viewProduct/${product4.productId }"/>" class="btn btn-primary">Go to know more</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm-6  mt-4 col-md-4">
-				<div class="card" style="width: 300px">
-					<img class="card-img-top" src="<c:url value="${product5.purl }"/>"
-						alt="Card image" style="width: 100%; height: 280px">
-					<div class="card-body">
-						<h3 class="card-title">${product5.pname }</h3>
-						<p class="card-text">${product5.pdec }</p>
-						<h4>Price  &#8377;${product5.pprice }</h4>
-						<a href="<c:url value="/viewProduct/${product5.productId }"/>" class="btn btn-primary">Go to know more</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm-6  mt-4 col-md-4">
-				<div class="card" style="width: 300px">
-					<img class="card-img-top" src="<c:url value="${product6.purl }"/>"
-						alt="Card image" style="width: 100%; height: 280px">
-					<div class="card-body">
-						<h3 class="card-title">${product6.pname }</h3>
-						<p class="card-text">${product6.pdec }</p>
-						<h4 >Price  &#8377;${product6.pprice }</h4>
-						<a href="<c:url value="/viewProduct/${product6.productId }"/>" class="btn btn-primary">Go to know more</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm-6  mt-4 col-md-4">
-				<div class="card" style="width: 300px">
-					<img class="card-img-top" src="<c:url value="${product7.purl }"/>"
-						alt="Card image" style="width: 100%; height: 280px">
-					<div class="card-body">
-						<h3 class="card-title">${product7.pname }</h3>
-						<p class="card-text">${product7.pdec }</p>
-						<h4 >Price  &#8377;${product7.pprice }</h4>
-						<a href="<c:url value="/viewProduct/${product7.productId }"/>" class="btn btn-primary">Go to know more</a>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
+		</c:forEach>
 	</div>
 
 

@@ -16,6 +16,7 @@
 </head>
 
 <body>
+<%String name=(String) session.getAttribute("username"); %>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 		<a class="navbar-brand" href="/Website">ShopNow</a>
 
@@ -27,15 +28,25 @@
 			</ul>
 			
 			<ul class="nav navbar-nav navbar-right">
+				
+				<%if(name != null){ %>
+				<li class="btn-home"><a href="<c:url value="/cartHome" />">My
+						Cart</a></li>
+				<li class="btn-home"><a href="<c:url value="/logout" />">logout</a></li>
+
+				<li class="btn-home "><a class="text-danger" href="<c:url value="/login" />">
+						<%out.print(name); %></a></li>
+						
+				<%}else{ %>
+				<li class="btn-home"><a href="<c:url value="/register" />">SignUp</a></li>
 				<li class="btn-home"><a href="<c:url value="/login" />">My
 						Cart</a></li>
-
-				<li class="btn-home"><a href="<c:url value="/register" />">SignUp</a></li>
-
 				<li class="btn-home"><a href="<c:url value="/login" />">
 						Login</a></li>
+						
+						<%} %>
 
-				<li class="btn-home"><a href="<c:url value="/viewadmin" />">
+				<li class="btn-home"><a href="<c:url value="/admin" />">
 						Admin</a></li>
 			</ul>
 		</div>

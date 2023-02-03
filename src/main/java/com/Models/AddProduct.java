@@ -4,24 +4,23 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 public class AddProduct {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private String productId;
+	private int productId;
 	private String pname;
 	private String pdec;
 	private int pprice;
 	private String purl;
 	private String pgender;
-	
-	
-	
-	public String getProductId() {
+
+	public int getProductId() {
 		return productId;
 	}
-	public void setProductId(String productId) {
+	public void setProductId(int productId) {
 		this.productId = productId;
 	}
 	public String getPname() {
@@ -54,11 +53,10 @@ public class AddProduct {
 	public void setPgender(String pgender) {
 		this.pgender = pgender;
 	}
-	@Override
-	public String toString() {
-		return "AddProduct [productId=" + productId + ", pname=" + pname + ", pdec=" + pdec + ", pprice=" + pprice
-				+ ", purl=" + purl + ", pgender=" + pgender + "]";
-	}
+
+
+
+
 
 	
 	
